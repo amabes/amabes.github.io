@@ -36,7 +36,7 @@ div {-webkit-box-sizing:border-box;-moz-box-sizing: border-box;box-sizing: borde
 .r100 {border-radius:100px!important;-moz-border-radius:100px!important;-o-border-radius:100px!important;border-top-left-radius: 100px!important;border-top-right-radius: 100px!important;border-bottom-left-radius: 100px!important;border-bottom-left-radius: 100px!important;}
 
 #portfolio {background:#1f2b38;color: #fff;}
-#portfolio .ico {background:url('../imgs/alan-mabry-r.jpg') 0 0 no-repeat transparent;height: 52px;width:52px;}
+#portfolio .ico {background:url('../imgs/profilePic.png') 0 0 no-repeat transparent;height: 52px;width:52px;background-size: contain;}
 #portfolio .info {margin:8px 0 0 8px}
 #portfolio .info .txt {font-size: medium;font-weight: bold;}
 #portfolio .info .subtxt {font-size: small;margin: 0 5px 0 0;font-weight: bold;}
