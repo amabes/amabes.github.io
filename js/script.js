@@ -105,37 +105,49 @@ if(typeof(FOLIO) == 'undefined'){
                     txt:'SASS',
                     num:'8/10'
                 },{
-                    txt:'LESS',
+                    txt:'ERB',
                     num:'8/10'
                 },{
                     txt:'PHP',
                     num:'7/10'
                 }],
                 frameworks:[{
+                    txt:'Ember',
+                    num:'9/10'
+                },{
+                    txt:'Angular',
+                    num:'7/10'
+                },{
+                    txt:'Middleman',
+                    num:'9/10'
+                },{
+                    txt:'Shopify',
+                    num:'9/10'
+                },{
+                    txt:'Bootstrap',
+                    num:'9/10'
+                },{
                     txt:'Drupal',
                     num:'9/10'
                 },{
                     txt:'Wordpress',
                     num:'6/10'
-                },{
-                    txt:'Handlebars',
-                    num:'8/10'
-                },{
-                    txt:'Bootstrap',
-                    num:'7/10'
-                },{
-                    txt:'Angular',
-                    num:'5/10'
                 }],
                 tools:[{
-                    txt:'SVN',
+                    txt:'BOWER',
+                    num:'8/10'
+                },{
+                    txt:'NPM',
+                    num:'8/10'
+                },{
+                    txt:'YARN',
+                    num:'7/10'
+                },{
+                    txt:'GULP',
                     num:'7/10'
                 },{
                     txt:'GIT',
-                    num:'6/10'
-                },{
-                    txt:'MySql',
-                    num:'6/10'
+                    num:'9/10'
                 },{
                     txt:'Photoshop',
                     num:'9/10'
