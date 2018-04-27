@@ -109,27 +109,8 @@ if(typeof(FOLIO) == 'undefined'){
         fn:{
             page:function(params){
                 console.log(params);
-                if(typeof(params.page_title) == 'undefined'){
-                        params.page_title == 'Curriculum Vitae';
-                }
-                if(typeof(params.page) == 'undefined'){
-                    params.page == 'cv';
-                }
-                if(typeof(params.page_href) == 'undefined'){
-                    params.page_href == 'cv';
-                }
-                // $('.menu-link').removeClass('active');
-                // $('.menu-link[href="'+params.page_href+'"]').addClass('active');
                 $('#social_media').html($('#social_media_tmpl').tmpl(FOLIO.data.social_media));
                 $('#social_media_btm').html($('#social_media_tmpl').tmpl(FOLIO.data.social_media));
-                // $('#main-content').html($('#main_content-'+params.page).tmpl({})).removeClass().addClass('sector '+params.page);
-                var stateObj = {page: params.page};
-                if(window.history.pushState){
-                    history.pushState(stateObj, params.page_title, params.page_href);
-                }else{
-                    location.hash = params.page_href;
-                }
-                FOLIO.fn.page_callback({page:params.page})
             },
             page_callback:function(params){
                 if(params.page == 'freelance'){ // freelance
@@ -147,13 +128,9 @@ if(typeof(FOLIO) == 'undefined'){
                         }]
                     });
                 }else if(params.page == 'products'){ // products
-                    //$('#products').html($('#product_tmpl').tmpl(FOLIO.data.products));
+                  // $('#products').html($('#product_tmpl').tmpl(FOLIO.data.products));
                 }else if(params.page == 'projects'){ // products
-                    $('#projects').html($('#project_tmpl').tmpl(FOLIO.data.projects));
-                }else if(params.page == 'cv'){ // products
-                    // $('#skills-languages').html($('#skill_tmpl').tmpl(FOLIO.data.skills.languages)); // Languages
-                    // $('#skills-frameworks').html($('#skill_tmpl').tmpl(FOLIO.data.skills.frameworks)); // Frameworks
-                    // $('#skills-tools').html($('#skill_tmpl').tmpl(FOLIO.data.skills.tools)); // Tools
+                  $('#projects').html($('#project_tmpl').tmpl(FOLIO.data.projects));
                 }
             },
             calculate_percent:function(num){
@@ -164,29 +141,7 @@ if(typeof(FOLIO) == 'undefined'){
         }
     }
 }
+
 $(document).ready(function(){
-    var path_name = document.location.pathname;
-    var params_default = {page:'cv',page_title:'Curriculum Vitae',page_href:'cv'}
-    //console.log(path_name);
-    if(path_name != '/'){
-        path_name = path_name.replace('/','')
-        params_default = ({page:path_name,page_title:'',page_href:path_name});
-    }
-    FOLIO.fn.page(params_default);
-    $('.menu-link').unbind().click(function(e){
-        $('.menu-link').removeClass('active');
-        $(this).addClass('active');
-        var page = $(this).attr('href');
-        var page_title = $(this).attr('title');
-        FOLIO.fn.page({
-           page:page,
-           page_title:page_title,
-           page_href:page
-        });
-        e.preventDefault();
-    });
-});
-
-$(window).resize(function(){
-
+  FOLIO.fn.page();
 });
