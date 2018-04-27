@@ -1,47 +1,16 @@
 # Alan J. Mabry
 
-I enjoy creating, problem solving, mentoring others and learning from my colleagues. My personality is positive and outgoing. I am the type of individual to go above and beyond what is required and follow through from start to finish.
+I have 10+ years experience as a front end software engineer.
 
-My roots in design have served me well as the client side layer has become more important. I communicate well with non-technical persons, designers and engineers.
+My background in design ensures the code I deliver matches mocks and allows me to communicate effectively with designers.
 
-I thrive in agile development environments and was privileged enough to learn from one of the founders of that process while at CitizenGlobal.
+I'm always learning and solving complex problems with colleagues.
 
-I am comfortable coding in complex proprietary code bases and learning the latest greatest JavaScript frameworks.
+Currently, I'm working on Tinka, an AI powered customer service representative.
+[t-mobile.at](https://www.t-mobile.at) [click pink circular button]
 
-It is important to me to be included in higher-level conversations regarding the trajectory of the product as well as UI/UX meetings to assist in determining possibilities or limitations of proposed features.
+At my previous position, I was working on CitizenGlobal, a platform for digital evidence management which was sold to the F.B.I. [citizenglobal.com](https://corp.citizenglobal.com)
 
-When I am not behind a computer screen, you can find me biking in the Santa Monica Mountains or surfing along our beautiful coast.
+My go to tech includes Javascript ES6+, React, HTML and SCSS.
 
-* Portfolio - [www.alanmabry.com/work](http://amabes.github.io)
-
-## Languages:
-* JavaScript `8/10`
-* HTML5 `8/10`
-* HTML `9/10`
-* CSS3 `9/10`
-* SASS `8/10`
-* LESS `6/10`
-
-## Frameworks:
-* Ember `8/10`
-* Angular `5/10`
-* Handlebars `8/10`
-* Bootstrap `5/10`
-* Drupal `9/10`
-* Wordpress `6/10`
-
-### Testing:
-* QUnit
-* Karma
-* Testem
-* RSPEC
-
-### Tools:
-* Git
-* SVN
-* Bower
-* NPM
-* Photoshop
-
-### Platforms:
-* MAC
+[See my LinkedIn profile](https://www.linkedin.com/in/alanmabry) for more career details.
