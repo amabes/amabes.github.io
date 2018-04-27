@@ -6,10 +6,10 @@ My background in design ensures the code I deliver matches mocks and allows me t
 
 I'm always learning and solving complex problems with colleagues.
 
-Currently, I'm working on Tinka, an AI powered customer service representative.
-[t-mobile.at](https://www.t-mobile.at) [click pink circular button]
+Currently, I'm working on [Tinka](https://www.t-mobile.at) (click pink circular button), an AI powered customer service representative.
 
-At my previous position, I was working on CitizenGlobal, a platform for digital evidence management which was sold to the F.B.I. [citizenglobal.com](https://corp.citizenglobal.com)
+
+At my previous position, I was working on [CitizenGlobal](https://corp.citizenglobal.com), a platform for digital evidence management which was sold to the F.B.I.
 
 My go to tech includes Javascript ES6+, React, HTML and SCSS.
 
