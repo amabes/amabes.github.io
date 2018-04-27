@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/jquery.modool.css" type="text/css" media="print, projection, screen"/>
     <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:700' rel='stylesheet' type='text/css'>
     <script id="social_media_tmpl" type="text/x-jquery-tmpl">
-        <a class="social_media ${css}" href="${link}"{{if on_click}} onclick="${on_click}"{{/if}} {{if css!='email'}} target="_blank"{{/if}} title="${title}"><img src="${img}"/></a>
+      <a class="col social_media ${css}" href="${link}"{{if on_click}} onclick="${on_click}"{{/if}} {{if css!='email'}} target="_blank"{{/if}} title="${title}"><img src="${img}"/></a>
     </script>
   </head>
 
@@ -26,40 +26,44 @@
         <div class="txt">Alan Mabry</div>
         <a class="subtxt fl" href="https://www.linkedin.com/in/alanmabry" target="_blank" title="LinkedIn">Software Engineer, Front-end</a>
       </div> -->
-      <div id="social_media" class="fr"></div>
+      <div id="social_media" class="flex-grid"></div>
     </div>
 
     <div id="mid" class="holder">
       <div id="main-content" class="sector">
         <div id="cv" class="clearfix">
           <div id="cv-img">
-            <img class="r100 loading" src="/imgs/profilePic.png"/>
+            <img class="profile-pic loading" src="/imgs/profilePic.png"/>
             <div class="txt">Alan Mabry</div>
             <div class="subtxt">Software Engineer, Front-end</div>
           </div>
-          <div id="cv-summary">
-            <p>
-              I have 10+ years experience building web applications.
-            </p>
-            <p>
-              My background in design ensures the code I deliver matches mocks and allows me to communicate effectively with designers.
-            </p>
-            <p>
-              I'm always learning and solving complex problems with colleagues.
-            </p>
-            <p>
-              Currently, I'm working on Tinka, an AI powered customer service representative.
-              <br> <a href="https://www.t-mobile.at" target="_blank">t-mobile.at</a> [click pink circular button]
-            </p>
-            <p>
-              At my previous position, I was working on CitizenGlobal, a platform for digital evidence management which was sold to the F.B.I. <a href="https://www.citizenglobal.com" target="_blank">citizenglobal.com</a>
-            </p>
-            <p>
-              My go to tech includes Javascript ES6+, React, HTML and SCSS.
-            </p>
-            <p>
-              <a href="https://www.linkedin.com/in/alanmabry" title="LinkedIn">See my LinkedIn profile</a> for more career details.
-            </p>
+          <div id="cv-summary" class="flex-grid flex-grid-thirds">
+            <div class="col">
+              <p>
+                I have 10+ years experience building web applications.
+              </p>
+              <p>
+                My background in design ensures the code I deliver matches mocks and allows me to communicate effectively with designers.
+              </p>
+              <p>
+                I'm always learning and solving complex problems with colleagues.
+              </p>
+              <p>
+                My go to tech includes Javascript ES6+, React, HTML and SCSS.
+              </p>
+              <p>
+                <a href="https://www.linkedin.com/in/alanmabry" title="LinkedIn">See my LinkedIn profile</a> for more career details.
+              </p>
+            </div>
+            <div class="col">
+              <h2>HIGHLIGHTS</h2>
+              <p>
+                Currently, I'm working on <a href="https://www.t-mobile.at" target="_blank">Tinka</a> (click pink circular button), an AI powered customer service representative.
+              </p>
+              <p>
+                At my previous position, I was working on <a href="https://www.citizenglobal.com" target="_blank">CitizenGlobal</a>, a platform for digital evidence management which was sold to the F.B.I.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -68,7 +72,7 @@
     <div id="btm-line" class="holder"></div>
 
     <div id="btm" class="holder clearfix">
-      <div id="social_media_btm"></div>
+      <div id="social-media-btm" class="flex-grid"></div>
     </div>
 
     <script type="text/javascript" src="js/jquery.js"></script>

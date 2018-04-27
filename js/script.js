@@ -110,7 +110,7 @@ if(typeof(FOLIO) == 'undefined'){
             page:function(params){
                 console.log(params);
                 $('#social_media').html($('#social_media_tmpl').tmpl(FOLIO.data.social_media));
-                $('#social_media_btm').html($('#social_media_tmpl').tmpl(FOLIO.data.social_media));
+                $('#social-media-btm').html($('#social_media_tmpl').tmpl(FOLIO.data.social_media));
             },
             page_callback:function(params){
                 if(params.page == 'freelance'){ // freelance

@@ -1,10 +1,22 @@
-/*********************************************************************************************************
-									cg.global.css
-*********************************************************************************************************/
-html, body {margin: 0;padding: 0;font-smoothing: antialiased;-webkit-font-smoothing: antialiased;-moz-font-smoothing: antialiased;-ms-font-smoothing: antialiased;height:100%}
-body {font-family:Arial, Helvetica, sans-serif;font-size: x-large;color:#6D6D6D}
+* {
+  box-sizing: border-box;
+  outline:none
+}
 
-* {outline:none}
+html,
+body {
+  color: #6D6D6D;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  height:100%;
+  margin: 0;
+  padding: 0;
+}
+
 a {color: #6096CF; outline:none;}
 a:hover {color:#369;}
 ol, ul {margin: 0px;}
@@ -28,27 +40,38 @@ div {-webkit-box-sizing:border-box;-moz-box-sizing: border-box;box-sizing: borde
 .clearfix::after {content:"";display:table;clear:both}
 .center {text-align: center;}
 .loading {background:url('../imgs/ajax-70x70.GIF') no-repeat center center transparent}
-.r4 {
-  border-radius:4px !important;
+
+.flex-grid {
+  display: flex;
 }
 
-.r10 {
-  border-radius:10px !important;
+.col {
+  flex: 1;
 }
 
-.r20 {
-  border-radius:20px !important;
+.main-content .col {
+  padding: 20px;
 }
 
-.r30 {
-  border-radius:30px !important;
+.flex-grid.flex-grid-thirds {
+  justify-content: space-between;
 }
 
-.r40 {
-  border-radius:40px !important;
+.flex-grid-thirds .col {
+  width: 32%;
 }
 
-.r100 {
+@media (max-width: 500px) {
+  .flex-grid {
+    display: block;
+  }
+
+  .flex-grid-thirds .col {
+    width: 100%;
+  }
+}
+
+.profile-pic {
   border-radius:100px !important;
 }
 
@@ -60,23 +83,21 @@ div {-webkit-box-sizing:border-box;-moz-box-sizing: border-box;box-sizing: borde
 #portfolio .info a {color: #51a5be;text-decoration: none;}
 
 #social_media {
-  display: block;
-  float: none;
   margin: 0 auto;
   padding: 10px 0;
   width: 145px;
 }
 
-#social_media img {
-  height:30px;
-  width:30px;
+#social_media img,
+#social_media a {
+  height: 30px;
+  width: 30px;
 }
 
 #social_media a {
   margin: 0 8px 0 10px;
   display: inline-block;
   position: relative;
-  top: 2px;
 }
 
 #menu {background:#34495e;margin: 0 0 20px 0;text-align: center;}
@@ -128,9 +149,25 @@ div {-webkit-box-sizing:border-box;-moz-box-sizing: border-box;box-sizing: borde
 #cv-skills .skill .txt {padding: 7px 10px;width: 95px;}
 #cv-skills .skill .num {background: #bdc3c7;padding: 7px;font-weight: bold;color: #fff;position: relative;}
 
-#btm {position: relative;bottom:0;left:0;background: #2c3e50;min-height:20px;}
-#social_media_btm {text-align: center;padding:20px;}
-#social_media_btm a {margin:0 10px;display: inline-block;}
+#btm {
+  background: #2c3e50;
+  bottom: 0;
+  left: 0;
+  position: relative;
+}
+
+#social-media-btm {
+  padding:20px;
+  text-align: center;
+}
+
+#social-media-btm a {
+  display: inline-block;
+  height: 40px;
+  margin: 0 10px;
+  width: 40px;
+}
+
 #btm-line {
   background:#51a5be;
   height: 20px;
