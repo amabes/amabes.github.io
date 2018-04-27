@@ -50,7 +50,10 @@ div {-webkit-box-sizing:border-box;-moz-box-sizing: border-box;box-sizing: borde
 #menu .menu-link {color: #fff;font-weight: bold;padding: 6px 15px;margin:17px 0 0 0;display:inline-block;text-decoration: none;}
 #menu .menu-link.active {background: #fff;color: #34495e;}
 #menu #amabes {position:absolute;right: 0px;top: 0px;width:54px;height:53px;}
-#mid {min-height: 700px;}
+#mid {
+  margin: 20px auto 0;
+  min-height: 700px;
+}
 #mid .sector {padding: 0 0 90px 0;}
 #mid .media {text-align:center;}
 #mid .media img {width:100%;}

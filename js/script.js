@@ -88,71 +88,7 @@ if(typeof(FOLIO) == 'undefined'){
                 website:'https://github.com/amabes/overzealous-modal',
                 img:'imgs/projects-overzealous-modal-logo.png',
                 body:"A lightweight jQuery plugin for oversized modals in web based applications."
-            }],skills:{
-                languages:[{
-                    txt:'JavaScript',
-                    num:'8/10'
-                },{
-                    txt:'jQuery',
-                    num:'9/10'
-                },{
-                    txt:'HTML',
-                    num:'9/10'
-                },{
-                    txt:'CSS',
-                    num:'9/10'
-                },{
-                    txt:'SASS',
-                    num:'8/10'
-                },{
-                    txt:'ERB',
-                    num:'8/10'
-                },{
-                    txt:'PHP',
-                    num:'7/10'
-                }],
-                frameworks:[{
-                    txt:'Ember',
-                    num:'9/10'
-                },{
-                    txt:'Angular',
-                    num:'7/10'
-                },{
-                    txt:'Middleman',
-                    num:'9/10'
-                },{
-                    txt:'Shopify',
-                    num:'9/10'
-                },{
-                    txt:'Bootstrap',
-                    num:'9/10'
-                },{
-                    txt:'Drupal',
-                    num:'9/10'
-                },{
-                    txt:'Wordpress',
-                    num:'6/10'
-                }],
-                tools:[{
-                    txt:'BOWER',
-                    num:'8/10'
-                },{
-                    txt:'NPM',
-                    num:'8/10'
-                },{
-                    txt:'YARN',
-                    num:'7/10'
-                },{
-                    txt:'GULP',
-                    num:'7/10'
-                },{
-                    txt:'GIT',
-                    num:'9/10'
-                },{
-                    txt:'Photoshop',
-                    num:'9/10'
-                }]
-            },
+            }],
             social_media:[{
                 title:'LinkedIn',
                 link:'https://www.linkedin.com/in/alanmabry',
@@ -182,11 +118,11 @@ if(typeof(FOLIO) == 'undefined'){
                 if(typeof(params.page_href) == 'undefined'){
                     params.page_href == 'cv';
                 }
-                $('.menu-link').removeClass('active');
-                $('.menu-link[href="'+params.page_href+'"]').addClass('active');
+                // $('.menu-link').removeClass('active');
+                // $('.menu-link[href="'+params.page_href+'"]').addClass('active');
                 $('#social_media').html($('#social_media_tmpl').tmpl(FOLIO.data.social_media));
                 $('#social_media_btm').html($('#social_media_tmpl').tmpl(FOLIO.data.social_media));
-                $('#main-content').html($('#main_content-'+params.page).tmpl({})).removeClass().addClass('sector '+params.page);
+                // $('#main-content').html($('#main_content-'+params.page).tmpl({})).removeClass().addClass('sector '+params.page);
                 var stateObj = {page: params.page};
                 if(window.history.pushState){
                     history.pushState(stateObj, params.page_title, params.page_href);
@@ -215,9 +151,9 @@ if(typeof(FOLIO) == 'undefined'){
                 }else if(params.page == 'projects'){ // products
                     $('#projects').html($('#project_tmpl').tmpl(FOLIO.data.projects));
                 }else if(params.page == 'cv'){ // products
-                    $('#skills-languages').html($('#skill_tmpl').tmpl(FOLIO.data.skills.languages)); // Languages
-                    $('#skills-frameworks').html($('#skill_tmpl').tmpl(FOLIO.data.skills.frameworks)); // Frameworks
-                    $('#skills-tools').html($('#skill_tmpl').tmpl(FOLIO.data.skills.tools)); // Tools
+                    // $('#skills-languages').html($('#skill_tmpl').tmpl(FOLIO.data.skills.languages)); // Languages
+                    // $('#skills-frameworks').html($('#skill_tmpl').tmpl(FOLIO.data.skills.frameworks)); // Frameworks
+                    // $('#skills-tools').html($('#skill_tmpl').tmpl(FOLIO.data.skills.tools)); // Tools
                 }
             },
             calculate_percent:function(num){
@@ -229,11 +165,6 @@ if(typeof(FOLIO) == 'undefined'){
     }
 }
 $(document).ready(function(){
-    if($('html').is('.IE8')){
-        $('.clearfix').each(function(){
-           $(this).append('<div class="clear"></div>');
-        });
-    }
     var path_name = document.location.pathname;
     var params_default = {page:'cv',page_title:'Curriculum Vitae',page_href:'cv'}
     //console.log(path_name);

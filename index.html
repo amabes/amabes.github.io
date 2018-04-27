@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-  <!--[if lt IE 7 ]> <html class="IE6"> <![endif]-->
-  <!--[if IE 7 ]>    <html class="IE7"> <![endif]-->
-  <!--[if IE 8 ]>    <html class="IE8"> <![endif]-->
-  <!--[if IE 9 ]>    <html class="IE9"> <![endif]-->
-  <!--[if (gt IE 9)|!(IE)]><!--> <html class=""> <!--<![endif]-->
   <head>
       <title>Alan Mabry : Sr.Software Engineer, Front-end</title>
       <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -20,9 +15,9 @@
       <link rel="stylesheet" href="css/jquery.modool.css" type="text/css" media="print, projection, screen"/>
       <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:700' rel='stylesheet' type='text/css'>
 
-      <script id="main_content-freelance" type="text/x-jquery-tmpl">
+      <!-- <script id="main_content-freelance" type="text/x-jquery-tmpl">
           <div id="medias"></div>
-      </script>
+      </script> -->
 
       <!--<script id="main_content-products" type="text/x-jquery-tmpl">
           <div id="product-sendus" class="product-header clearfix">
@@ -34,51 +29,22 @@
           <div id="products" class="clearfix"></div>
       </script>-->
 
-      <script id="main_content-projects" type="text/x-jquery-tmpl">
+      <!-- <script id="main_content-projects" type="text/x-jquery-tmpl">
           <div id="projects">PROJECTS</div>
-      </script>
+      </script> -->
 
-      <script id="main_content-cv" type="text/x-jquery-tmpl">
-          <div id="cv" class="clearfix">
-              <div id="cv-img">
-                  <img class="r100 loading" src="/imgs/profilePic.png"/>
-                  <div class="txt">Alan Mabry</div>
-                  <div class="subtxt">Software Engineer, Front-end</div>
-              </div>
-              <div id="cv-summary">
-                <p>
-                  I enjoy solving problems using the latest available technologies. I do not think one technology should be used in all scenarios. I believe it is better to leverage existing, well documented and supported code in projects so engineering efforts can be spent on solving more interesting issues.
-                </p>
-                <p>
-                  I am the type of individual to go above and beyond what is required and follow through from start to finish. My background in design has served me well in the ever-evolving client side layer and allows me to collaborate effectively in cross-functional teams.
-                </p>
-                <p>
-                  It is important to me to be included in higher-level conversations regarding the trajectory of the product as well as UI/UX meetings to assist in determining possibilities or limitations of proposed features.
-                </p>
-              </div>
-              <div id="cv-skills" class="cleafix">
-                  <div class="cv-skill">Languages</div>
-                  <div id="skills-languages"></div>
-                  <div class="cv-skill">Frameworks</div>
-                  <div id="skills-frameworks"></div>
-                  <div class="cv-skill">Tools</div>
-                  <div id="skills-tools"></div>
-                  <br />
-                  <p style="text-align:center">
-                      <a href="https://www.linkedin.com/in/alanmabry" title="LinkedIn">View Background and Experience</a>
-                  </p>
-              </div>
-          </div>
-      </script>
+      <!-- <script id="main_content-cv" type="text/x-jquery-tmpl">
 
-      <script id="skill_tmpl" type="text/x-jquery-tmpl">
+      </script> -->
+
+      <!-- <script id="skill_tmpl" type="text/x-jquery-tmpl">
           <div class="skill r30 clearfix">
               <div class="txt fl">${txt}</div>
               <div class="num fr r20" style="right:${FOLIO.fn.calculate_percent(num)}%">${num}</div>
           </div>
-      </script>
+      </script> -->
 
-      <script id="media_tmpl" type="text/x-jquery-tmpl">
+      <!-- <script id="media_tmpl" type="text/x-jquery-tmpl">
           <div class="media">
               {{if img}}
                   <a class="img-link" href="${link}" target="_blank" title="${title}"><img class="loading" src="${img}"/></a>
@@ -91,9 +57,9 @@
                   <div class="media-body">{{html body}}</div>
               {{/if}}
           </div>
-      </script>
+      </script> -->
 
-      <script id="product_tmpl" type="text/x-jquery-tmpl">
+      <!-- <script id="product_tmpl" type="text/x-jquery-tmpl">
           <div class="product">
               <div class="browser-bar clearfix">
                   <div class="bbl fl">
@@ -108,23 +74,23 @@
               <a title="View full sized image" href="${img}" target="_blank"><img class="loading" src="${img}"/></a>
               <div class="product-body">{{html body}}</div>
           </div>
-      </script>
+      </script> -->
 
-      <script id="project_tmpl" type="text/x-jquery-tmpl">
+      <!-- <script id="project_tmpl" type="text/x-jquery-tmpl">
           <div class="project">
               <a class="forkme red" href="${link}" target="_blank" title="${title}"></a>
               <a class="img fl" href="${website}" target="_blank" title="${title}"><img class="loading" src="${img}"/></a>
               <div class="project-title ubuntu">${title}</div>
               <div class="project-body">{{html body}}</div>
           </div>
-      </script>
+      </script> -->
 
-      <script id="media_nuko" type="text/x-jquery-tmpl">
+      <!-- <script id="media_nuko" type="text/x-jquery-tmpl">
           <video id="media_nuko_video" src="videos/nukotoys.m4v" preload="none" controls autoplay>
               Your browser does not support HTML5, time to upgrade.<br>
               <a href="/portfolio/videos/nukotoys.m4v" target="_blank">Watch Video</a>
           </video>
-      </script>
+      </script> -->
 
       <script id="social_media_tmpl" type="text/x-jquery-tmpl">
           <a class="social_media ${css}" href="${link}"{{if on_click}} onclick="${on_click}"{{/if}} {{if css!='email'}} target="_blank"{{/if}} title="${title}"><img src="${img}"/></a>
@@ -143,15 +109,56 @@
           <div id="social_media" class="fr"></div>
       </div>
 
-      <div id="menu" class="holder clearfix">
+      <!-- <div id="menu" class="holder clearfix">
           <a class="menu-link ubuntu" href="freelance" title="Freelance">freelance</a>
-          <!--<a class="menu-link ubuntu" href="products" title="Products">products</a>-->
+          <a class="menu-link ubuntu" href="products" title="Products">products</a>
           <a class="menu-link ubuntu" href="projects" title="Projects">projects</a>
           <a class="menu-link ubuntu" href="cv" title="CV">cv</a>
-      </div>
+      </div> -->
 
       <div id="mid" class="holder">
           <div id="main-content" class="sector">
+            <div id="cv" class="clearfix">
+                <div id="cv-img">
+                    <img class="r100 loading" src="/imgs/profilePic.png"/>
+                    <div class="txt">Alan Mabry</div>
+                    <div class="subtxt">Software Engineer, Front-end</div>
+                </div>
+                <div id="cv-summary">
+                  <p>
+                    I have 10+ years experience as a front end software engineer.
+                  </p>
+                  <p>
+                    My background in design ensures the code I deliver matches mocks and allows me to communicate effectively with designers.
+                  </p>
+                  <p>
+                    I'm always learning and solving complex problems with colleagues.
+                  </p>
+                  <p>
+                    Currently, I'm working on Tinka, an AI powered customer service representative.
+                    <br> <a href="https://www.t-mobile.at" target="_blank">t-mobile.at</a> [click pink circular button]
+                  </p>
+                  <p>
+                    At my previous position, I was working on CitizenGlobal, a platform for digital evidence management which was sold to the F.B.I. <a href="https://www.citizenglobal.com" target="_blank">citizenglobal.com</a>
+                  </p>
+                  <p>
+                    My go to tech includes Javascript ES6+, React, HTML and SCSS.
+                  </p>
+                  <p>
+                    <a href="https://www.linkedin.com/in/alanmabry" title="LinkedIn">See my LinkedIn profile</a> for more career details.
+                  </p>
+                  <!-- <p>
+                    I enjoy solving problems using the latest available technologies. I do not think one technology should be used in all scenarios. I believe it is better to leverage existing, well documented and supported code in projects so engineering efforts can be spent on solving more interesting issues.
+                  </p>
+                  <p>
+                    I am the type of individual to go above and beyond what is required and follow through from start to finish. My background in design has served me well in the ever-evolving client side layer and allows me to collaborate effectively in cross-functional teams.
+                  </p>
+                  <p>
+                    It is important to me to be included in higher-level conversations regarding the trajectory of the product as well as UI/UX meetings to assist in determining possibilities or limitations of proposed features.
+                  </p> -->
+                </div>
+
+            </div>
           </div>
       </div>
 
@@ -159,11 +166,10 @@
 
       <div id="btm" class="holder clearfix">
           <div id="social_media_btm"></div>
-          <div id="SkypeButton_Call_alan.mabry_1"></div>
       </div>
 
       <script type="text/javascript" src="js/jquery.js"></script>
-      <script type="text/javascript" src="js/jquery.modool.js"></script>
+      <!-- <script type="text/javascript" src="js/jquery.modool.js"></script> -->
       <script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
       <script type="text/javascript" src="js/script.js"></script>
       <script>
@@ -172,7 +178,7 @@
               m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
           })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-          ga('create', 'UA-43046605-2', 'iwillworkonyourfrontend.com');
+          ga('create', 'UA-43046605-1', 'alanmabry.com');
           ga('send', 'pageview');
 
       </script>
