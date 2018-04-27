@@ -109,15 +109,15 @@ if(typeof(FOLIO) == 'undefined'){
         fn:{
             page:function(params){
                 console.log(params);
-                if(typeof(params.page_title) == 'undefined'){
-                        params.page_title == 'Curriculum Vitae';
-                }
-                if(typeof(params.page) == 'undefined'){
-                    params.page == 'cv';
-                }
-                if(typeof(params.page_href) == 'undefined'){
-                    params.page_href == 'cv';
-                }
+                // if(typeof(params.page_title) == 'undefined'){
+                //         params.page_title == 'Curriculum Vitae';
+                // }
+                // if(typeof(params.page) == 'undefined'){
+                //     params.page == 'cv';
+                // }
+                // if(typeof(params.page_href) == 'undefined'){
+                //     params.page_href == 'cv';
+                // }
                 // $('.menu-link').removeClass('active');
                 // $('.menu-link[href="'+params.page_href+'"]').addClass('active');
                 $('#social_media').html($('#social_media_tmpl').tmpl(FOLIO.data.social_media));
@@ -160,29 +160,8 @@ if(typeof(FOLIO) == 'undefined'){
         }
     }
 }
+
 $(document).ready(function(){
-    var path_name = document.location.pathname;
-    var params_default = {page:'cv',page_title:'Curriculum Vitae',page_href:'cv'}
-    //console.log(path_name);
-    // if(path_name != '/'){
-        path_name = path_name.replace('/','')
-        params_default = ({page:path_name,page_title:'',page_href:path_name});
-    // }
-    FOLIO.fn.page(params_default);
-    $('.menu-link').unbind().click(function(e){
-        $('.menu-link').removeClass('active');
-        $(this).addClass('active');
-        var page = $(this).attr('href');
-        var page_title = $(this).attr('title');
-        FOLIO.fn.page({
-           page:page,
-           page_title:page_title,
-           page_href:page
-        });
-        e.preventDefault();
-    });
-});
-
-$(window).resize(function(){
-
+  $('#social_media').html($('#social_media_tmpl').tmpl(FOLIO.data.social_media));
+  $('#social_media_btm').html($('#social_media_tmpl').tmpl(FOLIO.data.social_media));
 });
