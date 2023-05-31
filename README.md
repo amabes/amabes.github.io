@@ -1,15 +1,17 @@
 # Alan J. Mabry
 
-In 2008, I started building web applications professionally. Before that I was designing websites and pursuing a BFA.
+I started building web apps in 2008. Before that I was designing websites and pursuing a BFA.
 
-I'm framework agnostic, but recently I've been exclusively using React & Redux to build enterprise web apps.
+I'm framework agnostic, but prefer React & NextJs to build enterprise web applications.
 
-I enjoy wrangling HTML & CSS and ❤️CSS-in-JS.
+Currently, I'm at [CLEAR](https://www.clearme.com/business-and-partnerships) building identity verification applications used by Fortune 500 companies including [AVIS](https://www.clearme.com/partners/avis) and [LinkedIn](https://www.clearme.com/partners/linkedin).
 
-Currently, I'm working on [Tinka](https://www.t-mobile.at), an AI powered customer service representative.
+At my previous position, I worked at [Total Brain](https://totalbrain.com), a platform to improve mental health and monitor brain performance.
 
-At my previous position, I worked on [CitizenGlobal](https://corp.citizenglobal.com), a platform for digital evidence management which was sold to the F.B.I.
+My go to tech includes Javascript, React, NodeJS and Cypress.
 
-My go to tech includes Javascript (ES6), React, Contentful and Firebase.
+The examples below are highlights from the past 10+ years and some current endeavors.
 
 [See my LinkedIn profile](https://www.linkedin.com/in/alanmabry) for more career details.
+
+Source Code: https://github.com/amabes/portfolio
